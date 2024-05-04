@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Booking - Classics Theater</title>
+    <link rel="stylesheet" href="main.css"> <!-- Link to the external CSS for styling -->
+</head>
+<body>
+    <header>
+        <h1><a href="/" style="color: white; text-decoration: none;">Classics Theater</a></h1> <!-- Header with a link to the homepage; styled directly here for white color and no underline -->
+    </header>
+
+    <div class="movie-details">
+        <!-- Movie details will be loaded here by JavaScript similar to the showings page -->
+    </div>
+
+    <form id="booking-form">
+        <label for="showing-date">Showing Date:</label> <!-- Label for the date selection -->
+        <span id="showing-date"></span> <!-- Span where the selected date will be displayed -->
+
+        <label for="time">Time:</label> <!-- Label for time selection -->
+        <select id="time"></select> <!-- Dropdown for selecting the time of the showing -->
+
+        <label for="tickets">Number of Tickets:</label> <!-- Label for ticket quantity selection -->
+        <input type="number" id="tickets" min="1" max="10" required> <!-- Input for number of tickets -->
+
+        <label for="email">Email Address:</label> <!-- Label for email input -->
+        <input type="email" id="email" required> <!-- Input for email address -->
+
+        <input type="submit" value="Confirm Booking"> <!-- Submit button for the booking form -->
+    </form>
+
+    <footer>
+        <p>&copy; 2024 Classics Theater</p> <!-- Footer content showing copyright notice -->
+    </footer>
+
+    <script src="app.js"></script> <!-- Link to the external JavaScript file that handles form submission and other interactions -->
+</body>
+</html>
